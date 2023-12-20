@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  app:
+    image: openjdk:17-jdk-alpine
+    container_name: archives3-app
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./target/archives3-0.0.1-SNAPSHOT.jar:/app/archives3.jar
+    command: ["java", "-jar", "/app/archives3.jar"]

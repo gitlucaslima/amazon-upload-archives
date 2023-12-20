@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "c6e3f003-c6cf-404e-b163-1401a923e3d4",
+		"name": "File-Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31086810"
+	},
+	"item": [
+		{
+			"name": "upload-file",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/sonda.lucaslm/Desktop/ComprovanteMatricula.pdf"
+						}
+					]
+				},
+				"url": "http://localhost:8080/file/upload"
+			},
+			"response": []
+		},
+		{
+			"name": "download-file",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://localhost:8080/file/download/1703087104568_ComprovanteMatricula.pdf"
+			},
+			"response": []
+		},
+		{
+			"name": "delete-file",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://localhost:8080/file/delete/1703087149459_ComprovanteMatricula.pdf"
+			},
+			"response": []
+		}
+	]
+}
